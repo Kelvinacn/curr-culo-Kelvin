@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Currículo</h1>
+        </header>
+
+        <section>
+            <h2>Informações Pessoais</h2>
+            <div class="info">
+                <label for="nome">Nome:</label>
+                <p id="nome">Kelvin Alex Cardoso Nascimento</p>
+
+                <h3>Endereço:</h3>
+                <label for="email">E-mail:</label>
+                <p id="email">Kelvinalex2008@hotmail.com</p>
+
+                <label for="telefone">Telefone:</label>
+                <p id="telefone">(31) 99732-8630</p>
+
+                <label for="endereco">Endereço:</label>
+                <p id="endereco">Avenida Carlos Drummond de Andrade, 85, Funilandia, Minas Gerais</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+            <div class="experiencia">
+                <h3>Estágio administração</h3>
+                <p>Prefeitura de Sete Lagoas - 2 anos</p>
+                <p>Verificava se os impostos(iptu) estavam sendo pagos.</p>
+                <h3>Responsável técnico de obra</h3>
+                <p>Autônomo - 11 meses </p>
+                <p>Verificava se a obra estava de acordo com os projetos e era responsável pela compra do matérial.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formação</h2>
+            <div class="Educacao">
+                <h3>Técnico em administração</h3>
+                <p>Escola técnica de Sete Lagoas - Concluído</p>
+                
+                <h3>Superior em engenharia civil</h3>
+                <p>Faculdades Promove - Concluído</p>
+
+                <h3>Técnico de informática para internet</h3>
+                <p>Cruzeiro do Sul - segundo semestre</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades">
+                <ul>
+                    <li>Excel Básico</li>
+                    <li>Word Básico</li>
+                    <li>Autocad Básico</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Enviar</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <p>Sua mensagem foi enviada com sucesso.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
